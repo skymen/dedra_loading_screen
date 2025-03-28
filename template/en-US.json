@@ -1,11 +1,11 @@
 {
   "languageTag": "en-US",
-  "fileDescription": "Strings for sample_addon.",
+  "fileDescription": "Strings for dedra_loading_screen.",
   "text": {
     "plugins": {
-      "sample_addon": {
-        "name": "Sample Addon",
-        "description": "Description",
+      "dedra_loading_screen": {
+        "name": "Dedra Loading Screen",
+        "description": "Adds a Dedra branded loading screen",
         "help-url": "https://www.construct.net",
         "aceCategories": {
           "Aces_Files_In_Category_Folder": "Aces_Files_In_Category_Folder",
