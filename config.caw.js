@@ -7,14 +7,14 @@ import {
 import _version from "./version.js";
 export const addonType = ADDON_TYPE.PLUGIN;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "sample_addon";
-export const name = "Sample Addon";
+export const id = "dedra_loading_screen";
+export const name = "Dedra Loading Screen";
 export const version = _version;
 export const minConstructVersion = undefined;
 export const author = "skymen";
 export const website = "https://www.construct.net";
 export const documentation = "https://www.construct.net";
-export const description = "Description";
+export const description = "Adds a Dedra branded loading screen";
 export const category = ADDON_CATEGORY.GENERAL;
 
 export const hasDomside = false;
