@@ -7,6 +7,8 @@ export default function (parentClass) {
       super();
       const properties = this._getInitProperties();
       if (properties) {
+        debugger;
+        this.PostToDOM("init", properties);
       }
     }
 
