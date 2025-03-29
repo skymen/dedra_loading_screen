@@ -45,7 +45,7 @@ const DedraLoader = (function () {
     viewportHeight: 1080,
     animation: {
       waveSpeed: 7, // Wave speed (lower is faster)
-      waveHeight: 20, // Wave height in pixels
+      waveHeight: 60, // Wave height in pixels
       rippleDelay: 600, // Delay between ripples
     },
     language: null, // Auto-detect if null
