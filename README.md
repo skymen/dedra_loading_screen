@@ -1,9 +1,9 @@
 <img src="./examples/cover.png" width="150" /><br>
 # Dedra Loading Screen
 <i>Adds a Dedra branded loading screen</i> <br>
-### Version 1.0.0.2
+### Version 1.0.1.0
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/dedra_loading_screen/releases/download/dedra_loading_screen-1.0.0.2.c3addon/dedra_loading_screen-1.0.0.2.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/dedra_loading_screen/releases/download/dedra_loading_screen-1.0.1.0.c3addon/dedra_loading_screen-1.0.1.0.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/dedra_loading_screen/releases) </sub> <br>
 
@@ -42,6 +42,11 @@ npm run dev
 ## Properties
 | Property Name | Description | Type |
 | --- | --- | --- |
+| Enabled | Enable or disable the loading screen | check |
+| Primary Color | Primary color for the loading screen | color |
+| Secondary Color | Secondary color for the loading screen | color |
+| Game Name | The name of the game to display | text |
+| Languages | Enable/disable specific languages (JSON format) | longtext |
 
 
 ---

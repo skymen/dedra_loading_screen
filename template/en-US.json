@@ -8,7 +8,28 @@
         "description": "Adds a Dedra branded loading screen",
         "help-url": "https://www.construct.net",
         "aceCategories": {},
-        "properties": {},
+        "properties": {
+          "enabled": {
+            "name": "Enabled",
+            "desc": "Enable or disable the loading screen"
+          },
+          "primaryColor": {
+            "name": "Primary Color",
+            "desc": "Primary color for the loading screen"
+          },
+          "secondaryColor": {
+            "name": "Secondary Color",
+            "desc": "Secondary color for the loading screen"
+          },
+          "gameName": {
+            "name": "Game Name",
+            "desc": "The name of the game to display"
+          },
+          "languages": {
+            "name": "Languages",
+            "desc": "Enable/disable specific languages (JSON format)"
+          }
+        },
         "actions": {},
         "conditions": {},
         "expressions": {}

@@ -17,7 +17,7 @@ export const documentation = "https://www.construct.net";
 export const description = "Adds a Dedra branded loading screen";
 export const category = ADDON_CATEGORY.GENERAL;
 
-export const hasDomside = false;
+export const hasDomside = true;
 export const files = {
   extensionScript: {},
   fileDependencies: [],
@@ -103,4 +103,75 @@ export const properties = [
     desc: "Property Description",
   }
   */
+
+  {
+    type: PROPERTY_TYPE.CHECK,
+    id: "enabled",
+    options: {
+      initialValue: true,
+    },
+    name: "Enabled",
+    desc: "Enable or disable the loading screen",
+  },
+  {
+    type: PROPERTY_TYPE.COLOR,
+    id: "primaryColor",
+    options: {
+      initialValue: [1, 1, 1],
+    },
+    name: "Primary Color",
+    desc: "Primary color for the loading screen",
+  },
+  {
+    type: PROPERTY_TYPE.COLOR,
+    id: "secondaryColor",
+    options: {
+      initialValue: [
+        0.07058823529411765, 0.07058823529411765, 0.07058823529411765,
+      ],
+    },
+    name: "Secondary Color",
+    desc: "Secondary color for the loading screen",
+  },
+  {
+    type: PROPERTY_TYPE.TEXT,
+    id: "gameName",
+    options: {
+      initialValue: "",
+    },
+    name: "Game Name",
+    desc: "The name of the game to display",
+  },
+  {
+    type: PROPERTY_TYPE.LONGTEXT,
+    id: "languages",
+    options: {
+      initialValue: JSON.stringify(
+        {
+          ar: true,
+          bn: true,
+          de: true,
+          en: true,
+          es: true,
+          fr: true,
+          hi: true,
+          id: true,
+          it: true,
+          ja: true,
+          ko: true,
+          nl: true,
+          pt: true,
+          ru: true,
+          tr: true,
+          ur: true,
+          vi: true,
+          zh: true,
+        },
+        null,
+        2
+      ),
+    },
+    name: "Languages",
+    desc: "Enable/disable specific languages (JSON format)",
+  },
 ];
