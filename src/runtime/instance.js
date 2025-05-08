@@ -12,15 +12,11 @@ export default function (parentClass) {
           this.runtime.platformInfo.exportType !== "preview"
         ) {
           const loadingHandler = (e) => {
-            this._postToDOM("set-progress", e.progress * 100);
+            this._postToDOM("set-progress", this.runtime.loadingProgress * 100);
           };
-          const interValId = setInterval(() => {
-            let progress = this.runtime.loadingProgress;
-            if (progress >= 1) {
-              clearInterval(interValId);
-            }
-            this._postToDOM("set-progress", progress * 100);
-          }, 10);
+          runOnStartup(async (runtime) => {
+            runtime.addEventListener("loadingprogress", loadingHandler);
+          });
           let promise = new Promise(async (resolve) => {
             await this._postToDOMAsync("init", {
               // Core options
